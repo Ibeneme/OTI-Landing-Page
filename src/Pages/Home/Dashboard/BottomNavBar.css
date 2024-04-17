@@ -1,0 +1,15 @@
+.bottom-nav{
+  display: none;
+}
+@media (max-width: 590px) {
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
