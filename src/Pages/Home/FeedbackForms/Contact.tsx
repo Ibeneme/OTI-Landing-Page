@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
                   Other Stakeholders
                 </button>
               </div>
-{/* 
+
               {displayType === "all" && (
                 <>
                   <div style={{ marginTop: 100 }}>
@@ -155,7 +155,7 @@ const Contact: React.FC = () => {
                     <ContactLog />
                   </div>
                 </>
-              )} */}
+              )}
             </div>
           </div>
         </div>

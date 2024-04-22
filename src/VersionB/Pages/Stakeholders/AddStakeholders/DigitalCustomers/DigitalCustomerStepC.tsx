@@ -27,7 +27,7 @@ const DigitalCustomerStepC: React.FC = () => {
         style={{
           width: "50%",
           backgroundImage:
-            "url('https://f005.backblazeb2.com/file/Webimages-used/greendata.png')",
+            "url('https://f005.backblazeb2.com/file/Webimages-used/001.png')",
           height: "100vh",
           backgroundSize: "cover",
           position: "fixed",

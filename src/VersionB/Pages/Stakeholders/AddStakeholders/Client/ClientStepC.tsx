@@ -3,6 +3,7 @@ import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import TextInputDashboard from "../../../../../Pages/Auth/Components/TextInouts/TextInputDashboard";
 import Button from "../../../../../Pages/Auth/Components/Buttons/Button";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const validationSchema = Yup.object().shape({
   startDate: Yup.date().required("Start date is required"),
@@ -21,13 +22,14 @@ const initialValues = {
 };
 
 const ClientStepC: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div style={{ position: "relative" }}>
       <div
         style={{
           width: "50%",
           backgroundImage:
-            "url('https://f005.backblazeb2.com/file/Webimages-used/orangedata.png')",
+            "url('https://f005.backblazeb2.com/file/Webimages-used/001.png')",
           height: "100vh",
           backgroundSize: "cover",
           position: "fixed",
@@ -68,6 +70,7 @@ const ClientStepC: React.FC = () => {
           initialValues={initialValues}
           validationSchema={validationSchema}
           onSubmit={(values) => {
+            navigate("/stakeholder");
             console.log("Form values on submission:", values);
           }}
         >

@@ -60,6 +60,10 @@ import DigitalCustomerStepC from "./VersionB/Pages/Stakeholders/AddStakeholders/
 import OthersStepA from "./VersionB/Pages/Stakeholders/AddStakeholders/OtherStakeholders/OthersStepA";
 import OtherStepB from "./VersionB/Pages/Stakeholders/AddStakeholders/OtherStakeholders/OtherStepB";
 import OthersStepC from "./VersionB/Pages/Stakeholders/AddStakeholders/OtherStakeholders/OtherStepC";
+import ToggleOptions from "./VersionB/Pages/Stakeholders/GetStakeHolders/GetStakeholder";
+import CustomerToggleOptionsPage from "./VersionB/Pages/Stakeholders/GetStakeHolders/GetCustomer";
+import ClientClientToggleOptionsPage from "./VersionB/Pages/Stakeholders/GetStakeHolders/GetClient";
+import DigitalDigital from "./VersionB/Pages/Stakeholders/GetStakeHolders/GetDigitalCustomer";
 //import StakeholdersFF from "./Pages/Home/Users/Components/StakeholdersFF";
 // import TicketDetails from "./Pages/Home/Tickets/ViewTicketDetails";
 
@@ -355,6 +359,19 @@ const App: React.FC = () => {
           <Route path="/others-step1" element={<OthersStepA />} />
           <Route path="/others-step2" element={<OtherStepB />} />
           <Route path="/others-step3" element={<OthersStepC />} />{" "}
+          <Route path="/getStakeholder" element={<ToggleOptions />} />{" "}
+          <Route
+            path="/getStakeholder-customer"
+            element={<CustomerToggleOptionsPage />}
+          />{" "}
+          <Route
+            path="/getStakeholder-client"
+            element={<ClientClientToggleOptionsPage />}
+          />{" "}
+          <Route
+            path="/getStakeholder-digital-customer"
+            element={<DigitalDigital />}
+          />{" "}
         </Routes>
         {isLoggedIn && <BottomNavBar />}
       </div>
